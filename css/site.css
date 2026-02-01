@@ -293,6 +293,25 @@ nav ul li:hover > .dropdown {
   text-underline-offset: 6px;
 }
 
+/* for cell phone screen fitting*/
+@media screen and (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .item-box {
+    width: 90%;
+    max-width: 320px;
+  }
+
+  .item img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+  }
+}
+
 /* Sparkle area */
 .sparkle-zone {
   position: relative;
