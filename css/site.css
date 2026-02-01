@@ -1,0 +1,317 @@
+body {
+  margin: 0;
+  background-color: #532EA2;
+  font-family: 'Jura', sans-serif;
+  color: #5FB63A;
+}
+
+/* Main container */
+.main-container {
+  background-color: #291C72;
+  margin: 40px auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 1000px;
+  border: 10px solid transparent;
+  box-shadow: 0 0 30px #5FB63A;
+  position: relative;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid #5FB63A;
+  border-bottom: 2px solid #5FB63A;
+  padding: 10px 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+/* Top Instagram links */
+.top-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #5FB63A;
+  font-weight: bold;
+}
+
+.ig-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #5FB63A;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.ig-icon {
+  width: 16px;
+  height: 16px;
+  image-rendering: pixelated;
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li {
+  position: relative;
+  background-color: transparent;
+  /* removed padding-bottom */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #5FB63A;
+  font-size: 1.2em;
+  padding: 8px 0;
+  display: inline-block;
+}
+
+/* Nav link glow on hover */
+nav ul li > a {
+  transition: text-shadow 0.15s ease, color 0.15s ease;
+}
+
+nav ul li > a:hover {
+  text-shadow:
+    0 0 6px #5FB63A,
+    0 0 12px #5FB63A;
+}
+
+/* Dropdown menu */
+.dropdown {
+  position: absolute;
+  top: 100%; /* sits flush under Products */
+  left: 0;
+  background-color: #291C72;
+  border: 1px solid #5FB63A;
+  padding: 10px 14px;
+  z-index: 100;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.15s ease, visibility 0.15s ease;
+}
+
+/* Show dropdown ONLY when parent li is hovered */
+nav ul li:hover > .dropdown {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Dropdown items */
+.dropdown li {
+  margin: 6px 0;
+}
+
+.dropdown li a {
+  color: #5FB63A;
+  text-decoration: none;
+  display: block;
+  padding: 4px 0;
+}
+
+/* Glow on hover */
+.dropdown li a:hover {
+  text-shadow: 0 0 6px #5FB63A, 0 0 10px #5FB63A;
+}
+
+/* Payment Page*/
+.payment-method {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.payment-icon {
+  width: 80px;
+  height: auto;
+  image-rendering: pixelated;
+}
+
+.payment-label p {
+  margin: 4px 0;
+  font-size: 1.1em;
+  color: #5FB63A;
+  text-shadow: 0 0 6px #5FB63A;
+}
+/* Underlined glowing title */
+.underlined-title {
+  text-decoration: underline;
+  text-decoration-color: #5FB63A;
+  text-underline-offset: 6px;
+}
+
+
+/* Horizontal payment layout */
+.payment-row {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.payment-method {
+  text-align: center;
+}
+
+.payment-icon {
+  width: 120px;
+  height: auto;
+  image-rendering: pixelated;
+}
+
+
+.payment-label p {
+  margin: 4px 0;
+  font-size: 1.1em;
+  color: #5FB63A;
+  text-shadow: 0 0 6px #5FB63A;
+}
+
+/* products page*/
+
+/* Underlined title */
+.underlined-title {
+  text-decoration: underline;
+  text-decoration-color: #5FB63A;
+  text-underline-offset: 6px;
+}
+
+/* Description styling */
+.product-description {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #5FB63A;
+}
+
+/* Product grid */
+.product-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+/* Each box */
+.product-box {
+  background-color: #291C72;
+  border: 2px solid #5FB63A;
+  padding: 20px;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0 0 15px #5FB63A;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Preview images */
+.product-preview {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+  image-rendering: pixelated;
+  margin-bottom: 15px;
+}
+
+/* Link under each box */
+.product-link {
+  color: #5FB63A;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: text-shadow 0.2s ease;
+}
+
+.product-link:hover {
+  text-shadow: 0 0 6px #5FB63A, 0 0 12px #5FB63A;
+}
+
+/* product Subtype pages spoons/straws/trinkets*/
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  justify-items: center;
+  margin-top: 40px;
+}
+
+.item {
+  text-align: center;
+}
+
+.item-box {
+  background-color: #291C72;
+  border: 2px solid #5FB63A;
+  padding: 20px;
+  width: 260px;
+  text-align: center;
+  box-shadow: 0 0 15px #5FB63A;
+  border-radius: 6px;
+}
+
+
+.item p {
+  color: #5FB63A;
+  font-size: 1.1em;
+  margin: 0;
+}
+
+.item img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  image-rendering: pixelated;
+  margin-bottom: 10px;
+  transition: transform 0.2s ease;
+  cursor: zoom-in;
+}
+
+.item img:hover {
+  transform: scale(3);
+  z-index: 10;
+}
+
+.underlined-title {
+  text-decoration: underline;
+  text-decoration-color: #5FB63A;
+  text-underline-offset: 6px;
+}
+
+/* Sparkle area */
+.sparkle-zone {
+  position: relative;
+  height: 200px;
+  margin-top: 30px;
+}
+
+.sparkle {
+  position: absolute;
+  width: 50px;
+  height: auto;
+}
+
+
+.sparkle1 { top: 10px; left: 20px; }
+.sparkle2 { top: 80px; left: 200px; }
+.sparkle3 { top: 50px; right: 100px; }
+.sparkle4 { bottom: 10px; right: 30px; }
+
+
+
+
