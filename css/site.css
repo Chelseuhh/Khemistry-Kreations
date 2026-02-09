@@ -32,6 +32,15 @@ header h1 {
   font-size: 2em;
 }
 
+.title-link {
+  color: #5FB63A;
+  text-decoration: none;
+}
+
+.title-link:hover {
+  text-shadow: 0 0 10px #5FB63A;
+}
+
 /* Top Instagram links */
 .top-links a {
   margin-left: 20px;
@@ -89,7 +98,7 @@ nav ul li > a:hover {
     0 0 12px #5FB63A;
 }
 
-/* Dropdown menu */
+/* Dropdown menu also was a pain in the ass to get this right*/
 .dropdown {
   position: absolute;
   top: 100%; /* sits flush under Products */
@@ -153,7 +162,7 @@ nav ul li:hover > .dropdown {
 }
 
 
-/* Horizontal payment layout */
+/* Payment Page add ons layout cash app venmo etc. */
 .payment-row {
   display: flex;
   justify-content: center;
@@ -180,7 +189,7 @@ nav ul li:hover > .dropdown {
   text-shadow: 0 0 6px #5FB63A;
 }
 
-/* products page*/
+/* Products Page Bullshit Placment that was making me angry*/
 
 /* Underlined title */
 .underlined-title {
@@ -189,7 +198,7 @@ nav ul li:hover > .dropdown {
   text-underline-offset: 6px;
 }
 
-/* Description styling */
+/* Description styling under the products */
 .product-description {
   text-align: center;
   margin-top: 10px;
@@ -197,7 +206,7 @@ nav ul li:hover > .dropdown {
   color: #5FB63A;
 }
 
-/* Product grid */
+/* Product grid page placement*/
 .product-grid {
   display: flex;
   justify-content: center;
@@ -220,7 +229,7 @@ nav ul li:hover > .dropdown {
   align-items: center;
 }
 
-/* Preview images */
+/* Preview images on the products page */
 .product-preview {
   width: 180px;
   height: 180px;
@@ -242,7 +251,7 @@ nav ul li:hover > .dropdown {
   text-shadow: 0 0 6px #5FB63A, 0 0 12px #5FB63A;
 }
 
-/* product Subtype pages spoons/straws/trinkets*/
+/* Product Subtype pages spoons/straws/trinkets*/
 .product-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -293,7 +302,7 @@ nav ul li:hover > .dropdown {
   text-underline-offset: 6px;
 }
 
-/* for cell phone screen fitting*/
+/* Added for fitting on a cell phone screen and not loading weird */
 @media screen and (max-width: 768px) {
   .product-grid {
     grid-template-columns: 1fr;
@@ -312,7 +321,7 @@ nav ul li:hover > .dropdown {
   }
 }
 
-/* Sparkle area */
+/* Sparkle bs that I have not sorted as of yet */
 .sparkle-zone {
   position: relative;
   height: 200px;
